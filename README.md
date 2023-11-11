@@ -8,5 +8,5 @@ Selenium is the dominant player in the market, and it is a library, not an autom
  * You cannot open multiple browsers simultaneously; Cypress runs inside a browser like an extension(imagine in that way), and it's tightly coupled with the tab instead of a window. 
  * In my experience, it is slower in performance, not in interactions as a tool. 
  * Each test is limited to only visiting domains determined to be of the same-origin.
-</br> But Playwright sounds like a different experience as it has no restrictions like Cypress, and performance is very smooth & fast as a tool. That is the reason I picked this tool.
+\But Playwright sounds like a different experience as it has no restrictions like Cypress, and performance is very smooth & fast as a tool. That is the reason I picked this tool.
 
