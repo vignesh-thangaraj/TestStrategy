@@ -1,0 +1,23 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend-tests": "npx playwright test",
+    "frontend-tests-ui": "npx playwright test --ui",
+    "backend-tests": "ENV=prod npx playwright test --config=./playwright.config.api.ts",
+    "backend-tests-ui": "ENV=prod npx playwright test --config=./playwright.config.api.ts --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.9.0",
+    "@faker-js/faker": "^8.1.0"
+  },
+  "dependencies": {
+    
+  }
+}

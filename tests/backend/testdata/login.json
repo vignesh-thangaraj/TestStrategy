@@ -1,0 +1,12 @@
+{
+    "dev":{
+        "email": "vigneshthangaraj1993+dev@gmail.com",
+        "password": "Pa$$w0rd",
+        "userName": "Vignesh DevUser"
+    },
+    "prod": {
+        "email": "vigneshthangaraj1993@gmail.com", 
+        "password": "Pa$$w0rd",
+        "userName": "Vignesh Thangaraj"
+    }
+}
