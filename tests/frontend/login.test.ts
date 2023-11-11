@@ -1,4 +1,4 @@
-import { test } from '../testFixtures';
+import { test } from './testFixtures';
 
 test.describe("User", () =>{
     test("Should allow in if supplied a valid crdentials", async ({loginPage, page}) =>{
