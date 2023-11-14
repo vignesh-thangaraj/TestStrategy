@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "frontend-tests": "npx playwright test",
-    "frontend-tests-ui": "npx playwright test --ui",
+    "frontend-tests:ui": "npx playwright test --ui",
     "backend-tests": "ENV=prod npx playwright test --config=./playwright.config.api.ts",
-    "backend-tests-ui": "ENV=prod npx playwright test --config=./playwright.config.api.ts --ui"
+    "backend-tests:ui": "ENV=prod npx playwright test --config=./playwright.config.api.ts --ui"
   },
   "keywords": [],
   "author": "",

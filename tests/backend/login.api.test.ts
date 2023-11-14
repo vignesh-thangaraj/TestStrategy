@@ -11,7 +11,6 @@ test.describe("API should respond", () =>{
                 "password":testdata.password
             }
         });
-        console.log(await response.json())
         expect(response.ok()).toBeTruthy()
         expect((await response.json()).name).toEqual(testdata.userName)
     })
@@ -24,5 +23,28 @@ test.describe("API should respond", () =>{
             }
         });
         expect(response.status() === 422).toBeTruthy()
+        expect((await response.json()).message.email).toEqual('Please enter a correct email address and password. Note that the password is case-sensitive')
+    })
+
+    test("422 for leaving Email value empty", async ({request}) =>{
+        const response = await request.post('/api/login', {
+            data: {
+                "email": "",
+                "password": faker.internet.password({length: 8})
+            }
+        });
+        expect(response.status() === 422).toBeTruthy()
+        expect((await response.json()).message.email).toEqual("Email is a required field")
+    })
+
+    test("422 for leaving Password value empty", async ({request}) =>{
+        const response = await request.post('/api/login', {
+            data: {
+                "email": faker.internet.email(),
+                "password": ""
+            }
+        });
+        expect(response.status() === 422).toBeTruthy()
+        expect((await response.json()).message.password).toEqual("Password is a required field")
     })
 })

@@ -45,23 +45,23 @@ const serverIssue:PlaywrightResponseType = {
 
 export class LoginPage {
 
-    private page: Page;
-    private userNameTextBox: Locator;
-    private passwordTextBox: Locator;
-    private submitButton: Locator;
-    private emailErrorMessage: Locator;
-    private passwordErrorMessage: Locator;
-    private googleSinginButton: Locator;
-    private githubSigninButton: Locator;
-    private loginSSOButton: Locator;
-    private forgetPasswordLink: Locator;
-    private signupLink: Locator;
-    private termsOfServiceLink: Locator;
-    private privacyPolicyLink: Locator;
-    private cookiesPolicyLink: Locator;
-    private logo: Locator;
-    private reviews: Locator;
-    private integration: Locator;
+    private readonly page: Page;
+    private readonly userNameTextBox: Locator;
+    private readonly passwordTextBox: Locator;
+    private readonly submitButton: Locator;
+    private readonly emailErrorMessage: Locator;
+    private readonly passwordErrorMessage: Locator;
+    private readonly googleSinginButton: Locator;
+    private readonly githubSigninButton: Locator;
+    private readonly loginSSOButton: Locator;
+    private readonly forgetPasswordLink: Locator;
+    private readonly signupLink: Locator;
+    private readonly termsOfServiceLink: Locator;
+    private readonly privacyPolicyLink: Locator;
+    private readonly cookiesPolicyLink: Locator;
+    private readonly logo: Locator;
+    private readonly reviews: Locator;
+    private readonly integration: Locator;
 
     constructor(page: Page){
         this.page = page;
